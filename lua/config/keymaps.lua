@@ -19,10 +19,10 @@ vim.keymap.set("n", "<C-Down>", ":res -1<Cr>", { desc = "Dec win height by 1 (de
 vim.keymap.set("n", "<C-Right>", ":vertical res +1<Cr>", { desc = "Inc win width by 1 (default)", silent = true, noremap = true })
 vim.keymap.set("n", "<C-Left>", ":vertical res -1<Cr>", { desc = "Inc win width by 1 (default)", silent = true, noremap = true })
 
-vim.keymap.set("n", "<C-h>", "<C-w><Left>", { desc = "Move cursor to left win", silent = true, noremap = true })
-vim.keymap.set("n", "<C-j>", "<C-w><Down>", { desc = "Move cursor to down win", silent = true, noremap = true })
-vim.keymap.set("n", "<C-k>", "<C-w><Up>", { desc = "Move cursor to up win", silent = true, noremap = true })
-vim.keymap.set("n", "<C-l>", "<C-w><Right>", { desc = "Move cursor to right win", silent = true, noremap = true })
+vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move cursor to left win", silent = true, noremap = true })
+vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move cursor to down win", silent = true, noremap = true })
+vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move cursor to up win", silent = true, noremap = true })
+vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move cursor to right win", silent = true, noremap = true })
 
 -- file explorer
 vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "File explorer", silent = true, noremap = true })
