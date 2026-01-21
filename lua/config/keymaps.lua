@@ -16,8 +16,10 @@ vim.keymap.set("n", "<leader>wd", "<cmd>close<CR>", { desc = "Close current wind
 
 vim.keymap.set("n", "<C-Up>", ":res +1<Cr>", { desc = "Inc win height by 1 (default)", silent = true, noremap = true })
 vim.keymap.set("n", "<C-Down>", ":res -1<Cr>", { desc = "Dec win height by 1 (default)", silent = true, noremap = true })
-vim.keymap.set("n", "<C-Right>", ":vertical res +1<Cr>", { desc = "Inc win width by 1 (default)", silent = true, noremap = true })
-vim.keymap.set("n", "<C-Left>", ":vertical res -1<Cr>", { desc = "Inc win width by 1 (default)", silent = true, noremap = true })
+vim.keymap.set("n", "<C-Right>", ":vertical res +1<Cr>",
+    { desc = "Inc win width by 1 (default)", silent = true, noremap = true })
+vim.keymap.set("n", "<C-Left>", ":vertical res -1<Cr>",
+    { desc = "Inc win width by 1 (default)", silent = true, noremap = true })
 
 vim.keymap.set("n", "<C-h>", "<C-w>h", { desc = "Move cursor to left win", silent = true, noremap = true })
 vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move cursor to down win", silent = true, noremap = true })
@@ -28,13 +30,13 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move cursor to right win", sile
 vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "File explorer", silent = true, noremap = true })
 
 -- source, write file operations
-vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>", {desc = "Save and source file"} )
-vim.keymap.set("n", "<leader>w", ":write<CR>", { desc = "Write file" } )
+vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>", { desc = "Save and source file" })
+vim.keymap.set("n", "<leader>w", ":write<CR>", { desc = "Write file" })
 vim.keymap.set("n", "<C-s>", ":write<CR>", { desc = "Write file" })
 
 -- lsp
-vim.keymap.set({"n", "v"}, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions", silent = true})
-vim.keymap.set({"n", "v"}, "<leader>cf", vim.lsp.buf.format, {desc = "Format code", silent = true})
+vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions", silent = true })
+vim.keymap.set({ "n", "v" }, "<leader>cf", vim.lsp.buf.format, { desc = "Format code", silent = true })
 
 
 --------------------------------------------------------------------------------
