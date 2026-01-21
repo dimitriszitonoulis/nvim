@@ -6,6 +6,7 @@ vim.pack.add({
     { src = "https://github.com/stevearc/conform.nvim.git" },
     { src = "https://github.com/nvim-lua/plenary.nvim.git" },
     { src = "https://github.com/nvim-telescope/telescope.nvim.git" },
+    { src = "https://github.com/catppuccin/nvim.git" },
 })
 
 -- vim.pack.del({
@@ -19,6 +20,6 @@ require("config.options")
 require("config.autocmds")
 require("config.keymaps")
 
-
 -- plugins
 require("plugins")
+ 
