@@ -29,6 +29,12 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move cursor to right win", sile
 -- file explorer
 vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "File explorer", silent = true, noremap = true })
 
+vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Telescope find files" })
+vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Telescope live grep" })
+vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", { desc = "Telescope buffers" })
+vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "Telescope help tags" })
+
+
 -- source, write file operations
 vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>", { desc = "Save and source file" })
 vim.keymap.set("n", "<leader>w", ":write<CR>", { desc = "Write file" })

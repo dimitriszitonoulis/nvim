@@ -4,3 +4,4 @@
 require("plugins.lspconfig")
 require("plugins.mason")
 require("plugins.mini_pairs")
+require("plugins.telescope")
