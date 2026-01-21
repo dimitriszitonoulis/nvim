@@ -32,7 +32,12 @@ vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>", {desc = "Save and so
 vim.keymap.set("n", "<leader>w", ":write<CR>", { desc = "Write file" } )
 vim.keymap.set("n", "<C-s>", ":write<CR>", { desc = "Write file" })
 
----------------------------------------------------------------------------------
+-- lsp
+vim.keymap.set({"n", "v"}, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions", silent = true})
+vim.keymap.set({"n", "v"}, "<leader>cf", vim.lsp.buf.format, {desc = "Format code", silent = true})
+
+
+--------------------------------------------------------------------------------
 -- For ctrl + <c, v, x> similar to other editors
 -- Copy
 -- vim.keymap.set('n', '<C-c>', '"+yy', { noremap = true, silent = true })
