@@ -1,6 +1,7 @@
 -- Used to simplify nvim/init.lua
 -- This way I only have to do require("plugins") there
 -- require("conform")
+require("plugins.whichkey")
 require("plugins.lspconfig")
 require("plugins.mason")
 require("plugins.mini_pairs")
