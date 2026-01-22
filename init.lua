@@ -7,6 +7,8 @@ vim.pack.add({
     { src = "https://github.com/nvim-lua/plenary.nvim.git" },
     { src = "https://github.com/nvim-telescope/telescope.nvim.git" },
     { src = "https://github.com/catppuccin/nvim.git" },
+    { src = "https://github.com/folke/trouble.nvim" },
+
 })
 
 -- vim.pack.del({
@@ -22,4 +24,3 @@ require("config.keymaps")
 
 -- plugins
 require("plugins")
- 

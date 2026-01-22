@@ -41,10 +41,26 @@ vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>", { desc = "Save and s
 vim.keymap.set("n", "<leader>w", ":write<CR>", { desc = "Write file" })
 vim.keymap.set("n", "<C-s>", ":write<CR>", { desc = "Write file" })
 
--- lsp
+-- lsp, code actions
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions", silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>cf", vim.lsp.buf.format, { desc = "Format code", silent = true })
+-- vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Show diagnostic under cursor", silent = true, noremap = true})
+-- vim.keymap.set("n", "<leader>cd", function()
+--   vim.diagnostic.open_float(0, {
+--     scope = "cursor",
+--     focus = true,
+--   })
+--   end, { desc = "Show diagnostic under cursor", silent = true, noremap = true})
 
+vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>",
+    { desc = "Diagnostics (Trouble)", silent = true })
+vim.keymap.set("n", "<leader>xX", "<cmd>Trouble diagnostics toggle filter.buf=0<cr>",
+    { desc = "Buffer Diagnostics (Trouble)" })
+vim.keymap.set("n", "<leader>cs", "<cmd>Trouble symbols toggle focus=false<cr>", { desc = "Symbols (Trouble)" })
+vim.keymap.set("n", "<leader>cl", "<cmd>Trouble lsp toggle focus=false win.position=right<cr>",
+    { desc = "LSP Definitions / references / ... (Trouble)" })
+vim.keymap.set("n", "<leader>xL", "<cmd>Trouble loclist toggle<cr>", { desc = "Location List (Trouble)" })
+vim.keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", { desc = "Quickfix List (Trouble)" })
 
 --------------------------------------------------------------------------------
 -- For ctrl + <c, v, x> similar to other editors

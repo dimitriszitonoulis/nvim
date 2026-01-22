@@ -6,4 +6,5 @@ require("plugins.mason")
 require("plugins.mini_pairs")
 require("plugins.telescope")
 require("plugins.colorscheme")
+require("plugins.trouble")
 
