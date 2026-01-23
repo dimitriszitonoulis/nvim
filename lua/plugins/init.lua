@@ -10,4 +10,5 @@ require("plugins.colorscheme")
 require("plugins.trouble")
 require("plugins.lualine")
 
+require("noice").setup()
 require("nvim-web-devicons").setup()
