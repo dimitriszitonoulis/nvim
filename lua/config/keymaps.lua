@@ -62,6 +62,15 @@ vim.keymap.set("n", "<leader>cl", "<cmd>Trouble lsp toggle focus=false win.posit
 vim.keymap.set("n", "<leader>xL", "<cmd>Trouble loclist toggle<cr>", { desc = "Location List (Trouble)" })
 vim.keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", { desc = "Quickfix List (Trouble)" })
 
+-- git
+--
+-- vim.keymap.set("n", "<leader>gc", "Telescope git_bcommits", { desc = "", silent=true, noremap=true})
+-- vim.keymap.set("n", "<leader>gr", "Telescope git_bcommits_range", { desc = "", silent=true, noremap=true})
+vim.keymap.set("n", "<leader>gb", ":Telescope git_branches<CR>", { desc = "branches", silent=true, noremap=true})
+vim.keymap.set("n", "<leader>gc", ":Telescope git_commits<CR>", { desc = "commits", silent=true, noremap=true})
+vim.keymap.set("n", "<leader>gf", ":Telescope git_files<CR>", { desc = "files", silent=true, noremap=true})
+vim.keymap.set("n", "<leader>gs", ":Telescope git_status<CR>", { desc = "status", silent=true, noremap=true})
+vim.keymap.set("n", "<leader>ga", ":Telescope git_stash<CR>", { desc = "stash", silent=true, noremap=true})
 --------------------------------------------------------------------------------
 -- For ctrl + <c, v, x> similar to other editors
 -- Copy
