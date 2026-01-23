@@ -9,6 +9,7 @@ vim.pack.add({
     { src = "https://github.com/catppuccin/nvim.git" },
     { src = "https://github.com/folke/trouble.nvim" },
     { src = "https://github.com/nvim-lualine/lualine.nvim.git" },
+    { src = "https://github.com/nvim-tree/nvim-web-devicons.git" },
 
 })
 

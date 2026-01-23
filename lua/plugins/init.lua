@@ -9,3 +9,5 @@ require("plugins.telescope")
 require("plugins.colorscheme")
 require("plugins.trouble")
 require("plugins.lualine")
+
+require("nvim-web-devicons").setup()
