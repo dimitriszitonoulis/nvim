@@ -12,6 +12,7 @@ vim.pack.add({
     { src = "https://github.com/nvim-tree/nvim-web-devicons.git" },
     { src = "https://github.com/MunifTanjim/nui.nvim" },
     { src = "https://github.com/folke/noice.nvim.git" },
+    { src = "https://github.com/nvim-neo-tree/neo-tree.nvim.git" },
 
 })
 
