@@ -9,7 +9,9 @@ require("plugins.telescope")
 require("plugins.colorscheme")
 require("plugins.trouble")
 require("plugins.lualine")
+require("plugins.nvim_cmp")
 
-require("noice").setup()
+-- require("noice").setup()
 require("nvim-web-devicons").setup()
-require('neo-tree').setup()
+-- This threw error
+-- require('neo-tree').setup()

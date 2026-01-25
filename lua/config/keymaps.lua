@@ -27,8 +27,8 @@ vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move cursor to up win", silent 
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move cursor to right win", silent = true, noremap = true })
 
 -- file explorer
--- vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "File explorer", silent = true, noremap = true })
-vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "File explorer", silent = true, noremap = true })
+vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "File explorer", silent = true, noremap = true })
+-- vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "File explorer", silent = true, noremap = true })
 
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Telescope find files" })
 vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Telescope live grep" })

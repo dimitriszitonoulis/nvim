@@ -10,18 +10,23 @@ vim.pack.add({
     { src = "https://github.com/folke/trouble.nvim" },
     { src = "https://github.com/nvim-lualine/lualine.nvim.git" },
     { src = "https://github.com/nvim-tree/nvim-web-devicons.git" },
-    { src = "https://github.com/MunifTanjim/nui.nvim" },
-    { src = "https://github.com/folke/noice.nvim.git" },
-    { src = "https://github.com/nvim-neo-tree/neo-tree.nvim.git" },
+    -- for autocompetion
+    { src = "https://github.com/hrsh7th/nvim-cmp.git" },
+    { src = "https://github.com/hrsh7th/cmp-buffer.git" },
+    { src = "https://github.com/hrsh7th/cmp-path.git" },
+    { src = "https://github.com/hrsh7th/cmp-nvim-lsp.git" },
+    { src = "https://github.com/hrsh7th/cmp-nvim-lua.git" },
+
 
 })
 
 -- vim.pack.del({
---   { src = "https://github.com/nvim-mini/mini.pairs.git" },
---   { src = "https://github.com/folke/which-key.nvim.git" },
---   -- { src = "https://github.com/nvim-neo-tree/neo-tree.nvim.git" },
---   { src = 'https://github.com/neovim/nvim-lspconfig' },
+--     { "nui.nvim" },
+--     { "noice.nvim.git" },
+--     { "neo-tree.nvim.git" },
 -- })
+
+-- require("noice")
 
 require("config.options")
 require("config.autocmds")
