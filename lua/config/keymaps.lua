@@ -39,7 +39,6 @@ vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "Telescop
 
 -- source, write file operations
 vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>", { desc = "Save and source file" })
-vim.keymap.set("n", "<leader>w", ":write<CR>", { desc = "Write file" })
 vim.keymap.set("n", "<C-s>", ":write<CR>", { desc = "Write file" })
 
 -- lsp, code actions
