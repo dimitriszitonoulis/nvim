@@ -44,6 +44,8 @@ vim.keymap.set("n", "<C-s>", ":write<CR>", { desc = "Write file" })
 -- lsp, code actions
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions", silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>cf", vim.lsp.buf.format, { desc = "Format code", silent = true })
+vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
+    { desc = "Display info under the cursor", silent = true, noremap = true })
 -- vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Show diagnostic under cursor", silent = true, noremap = true})
 -- vim.keymap.set("n", "<leader>cd", function()
 --   vim.diagnostic.open_float(0, {
@@ -66,11 +68,11 @@ vim.keymap.set("n", "<leader>xQ", "<cmd>Trouble qflist toggle<cr>", { desc = "Qu
 --
 -- vim.keymap.set("n", "<leader>gc", "Telescope git_bcommits", { desc = "", silent=true, noremap=true})
 -- vim.keymap.set("n", "<leader>gr", "Telescope git_bcommits_range", { desc = "", silent=true, noremap=true})
-vim.keymap.set("n", "<leader>gb", ":Telescope git_branches<CR>", { desc = "branches", silent=true, noremap=true})
-vim.keymap.set("n", "<leader>gc", ":Telescope git_commits<CR>", { desc = "commits", silent=true, noremap=true})
-vim.keymap.set("n", "<leader>gf", ":Telescope git_files<CR>", { desc = "files", silent=true, noremap=true})
-vim.keymap.set("n", "<leader>gs", ":Telescope git_status<CR>", { desc = "status", silent=true, noremap=true})
-vim.keymap.set("n", "<leader>ga", ":Telescope git_stash<CR>", { desc = "stash", silent=true, noremap=true})
+vim.keymap.set("n", "<leader>gb", ":Telescope git_branches<CR>", { desc = "branches", silent = true, noremap = true })
+vim.keymap.set("n", "<leader>gc", ":Telescope git_commits<CR>", { desc = "commits", silent = true, noremap = true })
+vim.keymap.set("n", "<leader>gf", ":Telescope git_files<CR>", { desc = "files", silent = true, noremap = true })
+vim.keymap.set("n", "<leader>gs", ":Telescope git_status<CR>", { desc = "status", silent = true, noremap = true })
+vim.keymap.set("n", "<leader>ga", ":Telescope git_stash<CR>", { desc = "stash", silent = true, noremap = true })
 --------------------------------------------------------------------------------
 -- For ctrl + <c, v, x> similar to other editors
 -- Copy
