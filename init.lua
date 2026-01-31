@@ -16,8 +16,8 @@ vim.pack.add({
     { src = "https://github.com/hrsh7th/cmp-path.git" },
     { src = "https://github.com/hrsh7th/cmp-nvim-lsp.git" },
     { src = "https://github.com/hrsh7th/cmp-nvim-lua.git" },
-
-
+    -- for semantic highlighting
+    { src = "https://github.com/nvim-treesitter/nvim-treesitter.git" }
 })
 
 -- vim.pack.del({

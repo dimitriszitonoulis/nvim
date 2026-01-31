@@ -27,6 +27,12 @@ vim.opt.clipboard:append("unnamedplus") --combine nvim and system register
 
 vim.o.winborder = "rounded"
 
+-- fold using treesitter plugin
+vim.opt.foldmethod = "expr"
+vim.opt.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+-- start with all folds open (check :h foldlevelstart)
+vim.opt.foldlevelstart = 99
+-- vim.o.foldcolumn = "auto:5"
 
 -- Disable autoformatting on save
 vim.g.autoformat = false
