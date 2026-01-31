@@ -43,7 +43,7 @@ require("cmp").setup({
         },
         {
             name = 'buffer',
-            keyword_length = 3
+            keyword_length = 5
         },
     }
 })
