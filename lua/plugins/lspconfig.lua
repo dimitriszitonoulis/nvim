@@ -4,7 +4,6 @@ vim.lsp.enable({
     "clangd",
     "tinymist",
     "html",
-    "htmldjango"
 })
 
 vim.lsp.config("pyright", {
@@ -19,6 +18,10 @@ vim.lsp.config("pyright", {
             },
         },
     },
+})
+
+vim.lsp.config("html", {
+    filetypes = { "html", "htmldjango"},
 })
 
 -- vim.lsp.config("clangd", {

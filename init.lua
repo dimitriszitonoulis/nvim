@@ -16,6 +16,10 @@ vim.pack.add({
     { src = "https://github.com/hrsh7th/cmp-path.git" },
     { src = "https://github.com/hrsh7th/cmp-nvim-lsp.git" },
     { src = "https://github.com/hrsh7th/cmp-nvim-lua.git" },
+
+    -- autoclose html tags
+    { src = "https://github.com/windwp/nvim-ts-autotag.git" },
+
     -- for semantic highlighting
     { src = "https://github.com/nvim-treesitter/nvim-treesitter.git" }
 })
