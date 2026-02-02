@@ -1,3 +1,5 @@
+local conform = require("conform")
+
 -- Add any additional keymaps here
 vim.g.mapleader = " "
 -- vim.g.maplocalleader = " "
@@ -26,6 +28,10 @@ vim.keymap.set("n", "<C-j>", "<C-w>j", { desc = "Move cursor to down win", silen
 vim.keymap.set("n", "<C-k>", "<C-w>k", { desc = "Move cursor to up win", silent = true, noremap = true })
 vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move cursor to right win", silent = true, noremap = true })
 
+-- buffers
+vim.keymap.set("n", "L", ":bn<CR>", { desc = "Goto next buffer", silent = true, noremap = true })
+vim.keymap.set("n", "H", ":bp<CR>", { desc = "Goto prev buffer", silent = true, noremap = true })
+
 -- file explorer
 vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "File explorer", silent = true, noremap = true })
 -- vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "File explorer", silent = true, noremap = true })
@@ -46,7 +52,7 @@ vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Co
 -- vim.keymap.set({ "n", "v" }, "<leader>cf", vim.lsp.buf.format, { desc = "Format code", silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>cf",
 function()
-    require("conform").format({ lsp_fallback = true })
+    conform.format({ lsp_fallback = true })
 end, { desc = "Format code", silent = true })
 
 vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
