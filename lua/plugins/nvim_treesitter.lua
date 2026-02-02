@@ -10,6 +10,7 @@ require("nvim-treesitter").install({
     "java",
 -- web dev
     "html",
+    "htmldjango",
     "css",
     "javascript",
     "typescript",
