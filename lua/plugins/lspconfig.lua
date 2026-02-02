@@ -3,6 +3,8 @@ vim.lsp.enable({
     "pyright",
     "clangd",
     "tinymist",
+    "html",
+    "htmldjango"
 })
 
 vim.lsp.config("pyright", {
