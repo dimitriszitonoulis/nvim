@@ -31,6 +31,7 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move cursor to right win", sile
 -- buffers
 vim.keymap.set("n", "L", ":bn<CR>", { desc = "Goto next buffer", silent = true, noremap = true })
 vim.keymap.set("n", "H", ":bp<CR>", { desc = "Goto prev buffer", silent = true, noremap = true })
+vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Close buffer", silent = true})
 
 -- file explorer
 vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "File explorer", silent = true, noremap = true })
