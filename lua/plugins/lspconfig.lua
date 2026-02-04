@@ -10,7 +10,7 @@ vim.lsp.config("pyright", {
     settings = {
         python = {
             analysis = {
-                typecheckingmode = "basic",
+                typeCheckingMode = "basic",
                 diagnosticSeverityOverrides = {
                     reportWildcardImportFromLibrary = "none",
                     reportWildcardImport = "none",
