@@ -9,9 +9,7 @@ vim.o.autoindent = true
 vim.o.smartindent = true
 vim.o.wrap = false
 
-vim.o.undofile = true -- undo changes after restart
-
-vim.o.incsearch = true
+vim.o.undofile = true -- undo changes after restart vim.o.incsearch = true
 vim.o.ignorecase = true
 vim.o.smartcase = true
 vim.o.hlsearch = true --highlight search as letters are typed
@@ -37,6 +35,9 @@ vim.opt.foldlevelstart = 99
 -- remap greek letters
 vim.o.langmap = "ΑA,ΒB,ΨC,ΔD,ΕE,ΦF,ΓG,ΗH,ΙI,ΞJ,ΚK,ΛL,ΜM,ΝN,ΟO,ΠP,QQ,ΡR,ΣS,ΤT,ΘU,ΩV,WW,ΧX,ΥY,ΖZ," ..
     "αa,βb,ψc,δd,εe,φf,γg,ηh,ιi,ξj,κk,λl,μm,νn,οo,πp,qq,ρr,σs,τt,θu,ωv,ςw,χx,υy,ζz"
+
+-- vim.diagnostic.config({ virtual_lines = true })
+vim.diagnostic.config({ virtual_text = true })
 
 -- Disable autoformatting on save
 vim.g.autoformat = false
