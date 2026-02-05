@@ -20,6 +20,9 @@ vim.pack.add({
     -- autoclose html tags
     { src = "https://github.com/windwp/nvim-ts-autotag.git" },
 
+    --file explorer
+    { src = "https://github.com/stevearc/oil.nvim.git" },
+
     -- for semantic highlighting
     { src = "https://github.com/nvim-treesitter/nvim-treesitter.git" }
 })

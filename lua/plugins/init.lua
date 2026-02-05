@@ -12,7 +12,7 @@ require("plugins.lualine")
 require("plugins.nvim_cmp")
 require("plugins.ts_autotags") -- autoclose html tags
 -- require("plugins.nvim_treesitter")
-
+require("plugins.oil")
 
 -- require("noice").setup()
 require("nvim-web-devicons").setup()
