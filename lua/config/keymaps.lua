@@ -31,10 +31,10 @@ vim.keymap.set("n", "<C-l>", "<C-w>l", { desc = "Move cursor to right win", sile
 -- buffers
 vim.keymap.set("n", "L", ":bn<CR>", { desc = "Goto next buffer", silent = true, noremap = true })
 vim.keymap.set("n", "H", ":bp<CR>", { desc = "Goto prev buffer", silent = true, noremap = true })
-vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Close buffer", silent = true})
+vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Close buffer", silent = true })
 
 -- file explorer
-vim.keymap.set("n", "<leader>e", ":Explore<CR>", { desc = "File explorer", silent = true, noremap = true })
+vim.keymap.set("n", "<leader>e", "<cmd>Oil<CR>", { desc = "File explorer", silent = true, noremap = true })
 -- vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "File explorer", silent = true, noremap = true })
 
 vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Telescope find files" })
@@ -53,9 +53,9 @@ vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Co
 vim.keymap.set({ "n", "v" }, "<leader>cr", vim.lsp.buf.rename, { desc = "Code actions", silent = true })
 -- vim.keymap.set({ "n", "v" }, "<leader>cf", vim.lsp.buf.format, { desc = "Format code", silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>cf",
-function()
-    conform.format({ lsp_fallback = true })
-end, { desc = "Format code", silent = true })
+    function()
+        conform.format()
+    end, { desc = "Format code", silent = true })
 
 vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
     { desc = "Display info under the cursor", silent = true, noremap = true })
