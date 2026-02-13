@@ -12,6 +12,7 @@ vim.pack.add({
     { src = "https://github.com/nvim-tree/nvim-web-devicons.git" },
     -- for autocompetion
     { src = "https://github.com/hrsh7th/nvim-cmp.git" },
+    { src = "https://github.com/hrsh7th/cmp-nvim-lsp-signature-help.git" },
     { src = "https://github.com/hrsh7th/cmp-buffer.git" },
     { src = "https://github.com/hrsh7th/cmp-path.git" },
     { src = "https://github.com/hrsh7th/cmp-nvim-lsp.git" },
