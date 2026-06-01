@@ -25,7 +25,11 @@ vim.pack.add({
     { src = "https://github.com/stevearc/oil.nvim.git" },
 
     -- for semantic highlighting
-    { src = "https://github.com/nvim-treesitter/nvim-treesitter.git" }
+    { src = "https://github.com/nvim-treesitter/nvim-treesitter.git" },
+
+    -- git show differences
+    { src = "https://github.com/nvim-mini/mini.diff.git"}
+
 })
 
 -- vim.pack.del({

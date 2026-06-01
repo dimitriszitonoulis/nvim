@@ -32,6 +32,10 @@
       "rev": "44d1e90e1f66e077268191e3ee9d2ac97cc18e65",
       "src": "https://github.com/mason-org/mason.nvim.git"
     },
+    "mini.diff": {
+      "rev": "5af2b6be4a4beb673f3196a414f6fd932bbedd48",
+      "src": "https://github.com/nvim-mini/mini.diff.git"
+    },
     "mini.pairs": {
       "rev": "b9aada8",
       "src": "https://github.com/nvim-mini/mini.pairs.git"
