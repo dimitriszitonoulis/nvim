@@ -19,6 +19,17 @@ require("conform").setup({
     -- Conform will notify you when a formatter errors
     notify_on_error = true,
 
+    -- Auto command to format on save.
+    -- I prefered to have it as a separate auto command in
+    -- lua/config/autocmds.lua
+    -- Both this and the auto command are can be found in:
+    -- https://github.com/stevearc/conform.nvim
+    -- format_on_save = {
+    --     -- These options will be passed to conform.format()
+    --     timeout_ms = 500,
+    --     lsp_format = "fallback",
+    -- },
+
 
     -- formatters = {
     --     prettierd = {
