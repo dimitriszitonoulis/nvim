@@ -4,6 +4,7 @@ vim.lsp.enable({
     "clangd",
     "tinymist",
     "html",
+    "bashls",
 })
 
 vim.lsp.config("pyright", {

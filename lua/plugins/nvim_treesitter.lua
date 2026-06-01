@@ -8,6 +8,7 @@ require("nvim-treesitter").install({
     "c",
     "cpp",
     "java",
+    "bash",
 -- web dev
     "html",
     "htmldjango",
