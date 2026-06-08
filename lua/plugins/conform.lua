@@ -8,6 +8,8 @@ require("conform").setup({
         bash = { "shfmt" },
         sh = { "shfmt" },
         zsh = { "shfmt" },
+        c = { "clang-format" },
+        cpp = { "clang-format" }
     },
     -- Set this to change the default values when calling conform.format()
     -- This will also affect the default values for format_on_save/format_after_save
