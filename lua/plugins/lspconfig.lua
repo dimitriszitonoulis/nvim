@@ -5,6 +5,7 @@ vim.lsp.enable({
     "tinymist",
     "html",
     "bashls",
+    "yamlls"
 })
 
 vim.lsp.config("pyright", {
@@ -23,6 +24,24 @@ vim.lsp.config("pyright", {
 
 vim.lsp.config("html", {
     filetypes = { "html", "htmldjango" },
+})
+
+
+vim.lsp.config("yamlls", {
+    settings = {
+        redhat = {
+            telemetry = {
+                enabled = false
+            }
+        },
+        yaml = {
+            validate = true,
+            format = {
+                enable = true
+            },
+            keyOrdering = false
+        }
+    }
 })
 
 -- vim.lsp.config("clangd", {
