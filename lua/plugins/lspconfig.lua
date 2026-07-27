@@ -5,7 +5,8 @@ vim.lsp.enable({
     "tinymist",
     "html",
     "bashls",
-    "yamlls"
+    "yamlls",
+    "marksman"
 })
 
 vim.lsp.config("pyright", {

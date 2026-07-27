@@ -28,7 +28,10 @@ vim.pack.add({
     { src = "https://github.com/nvim-treesitter/nvim-treesitter.git" },
 
     -- git show differences
-    { src = "https://github.com/nvim-mini/mini.diff.git"}
+    { src = "https://github.com/nvim-mini/mini.diff.git" },
+
+    -- markdown preview
+    { src = "https://github.com/OXY2DEV/markview.nvim.git" },
 
 })
 
@@ -37,6 +40,7 @@ vim.pack.add({
 --     { "noice.nvim.git" },
 --     { "neo-tree.nvim.git" },
 -- })
+
 
 -- require("noice")
 
