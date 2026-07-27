@@ -33,6 +33,9 @@ vim.pack.add({
     -- markdown preview
     { src = "https://github.com/OXY2DEV/markview.nvim.git" },
 
+    -- linter
+    { src = "https://github.com/mfussenegger/nvim-lint.git" }
+
 })
 
 -- vim.pack.del({

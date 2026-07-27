@@ -15,6 +15,7 @@ require("plugins.ts_autotags") -- autoclose html tags
 require("plugins.oil")
 require("plugins.minidiff")
 require("plugins.markview")
+require("plugins.nvim_lint")
 
 -- require("noice").setup()
 require("nvim-web-devicons").setup()
