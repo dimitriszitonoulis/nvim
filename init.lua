@@ -34,7 +34,10 @@ vim.pack.add({
     { src = "https://github.com/OXY2DEV/markview.nvim.git" },
 
     -- linter
-    { src = "https://github.com/mfussenegger/nvim-lint.git" }
+    { src = "https://github.com/mfussenegger/nvim-lint.git" },
+
+    -- debug adapter
+    { src = "https://github.com/mfussenegger/nvim-dap.git" }
 
 })
 
