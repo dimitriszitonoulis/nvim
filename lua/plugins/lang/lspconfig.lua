@@ -6,7 +6,8 @@ vim.lsp.enable({
     "html",
     "bashls",
     "yamlls",
-    "marksman"
+    "marksman",
+    "lemminx"
 })
 
 vim.lsp.config("pyright", {
