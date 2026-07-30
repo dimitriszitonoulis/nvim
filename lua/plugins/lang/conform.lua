@@ -5,6 +5,7 @@ require("conform").setup({
         python = { "ruff_format" },
         html = { "prettierd" },
         htmldjango = { "prettierd" },
+        xhtml = { "prettierd" },
         bash = { "shfmt" },
         sh = { "shfmt" },
         zsh = { "shfmt" },
