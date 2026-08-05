@@ -12,5 +12,5 @@ require("lint").linters_by_ft = {
     typescriptreact = { "eslint_d" },
     html = { "htmlhint" },
     htmldjango = { "htmlhint" },
-    bash = { "spellcheck" },
+    bash = { "shellcheck" },
 }
