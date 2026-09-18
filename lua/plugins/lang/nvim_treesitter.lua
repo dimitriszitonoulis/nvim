@@ -9,13 +9,13 @@ require("nvim-treesitter").install({
     "cpp",
     "java",
     "bash",
--- web dev
+    -- web dev
     "html",
     "htmldjango",
     "css",
     "javascript",
     "typescript",
--- other
+    -- other
     "markdown",
     "nginx",
 })
