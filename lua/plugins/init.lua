@@ -7,6 +7,7 @@ require("plugins.lang.conform")
 require("plugins.lang.nvim_lint")
 require("plugins.lang.markview")
 require("plugins.lang.ts_autotags") -- autoclose html tags
+require("plugins.lang.nvim_treesitter")
 
 require("plugins.ide.telescope")
 require("plugins.ide.trouble")
