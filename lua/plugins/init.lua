@@ -25,3 +25,4 @@ require("plugins.misc.oil")
 require("nvim-web-devicons").setup()
 -- This threw error
 -- require('neo-tree').setup()
+require("nvim-tree").setup()

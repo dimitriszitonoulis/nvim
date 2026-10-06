@@ -37,9 +37,14 @@ vim.pack.add({
     { src = "https://github.com/mfussenegger/nvim-lint.git" },
 
     -- debug adapter
-    { src = "https://github.com/mfussenegger/nvim-dap.git" }
+    { src = "https://github.com/mfussenegger/nvim-dap.git" },
+
+    -- file tree
+    { src = "https://github.com/nvim-tree/nvim-tree.lua.git" },
 
 })
+
+
 
 -- vim.pack.del({
 --     { "nui.nvim" },
