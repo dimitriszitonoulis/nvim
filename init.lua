@@ -42,6 +42,8 @@ vim.pack.add({
     -- file tree
     { src = "https://github.com/nvim-tree/nvim-tree.lua.git" },
 
+    { src = "https://github.com/ellisonleao/gruvbox.nvim" },
+
 })
 
 

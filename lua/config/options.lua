@@ -8,6 +8,7 @@ vim.o.expandtab = true
 vim.o.autoindent = true
 vim.o.smartindent = true
 vim.o.wrap = false
+vim.o.background = "dark"
 
 vim.o.undofile = true -- undo changes after restart vim.o.incsearch = true
 vim.o.ignorecase = true
