@@ -7,7 +7,8 @@ vim.lsp.enable({
     "bashls",
     "yamlls",
     "marksman",
-    "lemminx"
+    "lemminx",
+    --"nginx_language_server"
 })
 
 vim.lsp.config("pyright", {
