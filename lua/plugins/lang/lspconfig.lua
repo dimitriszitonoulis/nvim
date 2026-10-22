@@ -8,7 +8,9 @@ vim.lsp.enable({
     "yamlls",
     "marksman",
     "lemminx",
-    --"nginx_language_server"
+    "nginx_language_server",
+    "vtsls",
+    "harper"
 })
 
 vim.lsp.config("pyright", {
@@ -20,6 +22,7 @@ vim.lsp.config("pyright", {
                     reportWildcardImportFromLibrary = "none",
                     reportWildcardImport = "none",
                 },
+                diagnosticMode = "openFilesOnly"
             },
         },
     },
@@ -56,6 +59,18 @@ vim.lsp.config("lua_ls", {
         }
     }
 
+})
+
+
+-- For more info check: https://writewithharper.com/docs/integrations/neovim
+-- https://github.com/neovim/nvim-lspconfig/blob/master/doc/configs.md#harper_ls
+vim.lsp.config("harper", {
+    cmd = { "harper-ls", "--stdio" },
+    root_markers = { ".harper-dictionary.txt", ".git" },
+    filetypes = { "markdown", "text", "tex", "typst" },
+    -- settings = {
+    --
+    -- }
 })
 
 
