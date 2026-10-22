@@ -35,13 +35,15 @@ vim.keymap.set("n", "<leader>bd", ":bd<CR>", { desc = "Close buffer", silent = t
 
 -- file explorer
 vim.keymap.set("n", "<leader>e", "<cmd>Oil<CR>", { desc = "File explorer", silent = true, noremap = true })
--- vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { desc = "File explorer", silent = true, noremap = true })
+vim.keymap.set("n", "<leader>E", ":NvimTreeToggle<CR>", { desc = "File explorer", silent = true, noremap = true })
 
-vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "Telescope find files" })
-vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "Telescope live grep" })
-vim.keymap.set("n", "<leader><leader>", ":Telescope live_grep<CR>", { desc = "Telescope live grep" })
-vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", { desc = "Telescope buffers" })
-vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "Telescope help tags" })
+vim.keymap.set("n", "<leader>ff", ":Telescope find_files<CR>", { desc = "find files" })
+vim.keymap.set("n", "<leader>fg", ":Telescope live_grep<CR>", { desc = "live grep" })
+vim.keymap.set("n", "<leader><leader>", ":Telescope live_grep<CR>", { desc = "live grep" })
+vim.keymap.set("n", "<leader>fb", ":Telescope buffers<CR>", { desc = "buffers" })
+vim.keymap.set("n", "<leader>fh", ":Telescope help_tags<CR>", { desc = "help tags" })
+vim.keymap.set("n", "<leader>fk", ":Telescope keymaps<CR>", { desc = "keymaps" })
+vim.keymap.set("n", "<leader>fm", ":Telescope keymaps<CR>", { desc = "manpages" })
 
 
 -- source, write file operations
@@ -56,16 +58,22 @@ vim.keymap.set({ "n", "v" }, "<leader>cf",
     function()
         conform.format()
     end, { desc = "Format code", silent = true })
+vim.keymap.set({ "n", "v" }, "<leader>cd", vim.lsp.buf.definition, { desc = "Go to definition", silent = true })
+vim.keymap.set({ "n", "v" }, "<leader>cR", vim.lsp.buf.references, { desc = "References", silent = true })
+vim.keymap.set({ "n", "v" }, "<leader>cO", vim.lsp.buf.outgoing_calls, { desc = "outgoing_calls", silent = true })
 
-vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
-    { desc = "Display info under the cursor", silent = true, noremap = true })
--- vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Show diagnostic under cursor", silent = true, noremap = true})
--- vim.keymap.set("n", "<leader>cd", function()
---   vim.diagnostic.open_float(0, {
---     scope = "cursor",
---     focus = true,
---   })
---   end, { desc = "Show diagnostic under cursor", silent = true, noremap = true})
+
+-- lua vim.lsp.buf.outgoing_calls()
+
+-- vim.keymap.set("n", "<leader>cd", vim.lsp.buf.hover,
+--     { desc = "Display info under the cursor", silent = true, noremap = true })
+-- -- vim.keymap.set("n", "<leader>cd", vim.diagnostic.open_float, { desc = "Show diagnostic under cursor", silent = true, noremap = true})
+-- -- vim.keymap.set("n", "<leader>cd", function()
+-- --   vim.diagnostic.open_float(0, {
+-- --     scope = "cursor",
+-- --     focus = true,
+-- --   })
+-- --   end, { desc = "Show diagnostic under cursor", silent = true, noremap = true})
 
 vim.keymap.set("n", "<leader>xx", "<cmd>Trouble diagnostics toggle<cr>",
     { desc = "Diagnostics (Trouble)", silent = true })
