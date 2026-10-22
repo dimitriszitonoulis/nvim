@@ -13,6 +13,9 @@ require("conform").setup({
         cpp = { "clang-format" },
         markdown = { "prettierd" },
         yaml = { "prettierd" },
+        javascript = { "prettierd" },
+        typescript = { "prettierd" },
+
         -- nginx = { "prettierd" }
     },
     -- Set this to change the default values when calling conform.format()
