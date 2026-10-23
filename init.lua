@@ -44,6 +44,8 @@ vim.pack.add({
 
     { src = "https://github.com/ellisonleao/gruvbox.nvim" },
 
+    -- documentation support
+    { src = "https://github.com/danymat/neogen.git" },
 })
 
 

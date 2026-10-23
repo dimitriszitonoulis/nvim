@@ -14,6 +14,7 @@ require("plugins.ide.trouble")
 require("plugins.ide.nvim_cmp")
 require("plugins.ide.mini_pairs")
 require("plugins.ide.minidiff")
+require("plugins.ide.neogen")
 
 
 require("plugins.misc.whichkey")

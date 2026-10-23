@@ -52,6 +52,10 @@ vim.keymap.set("n", "<C-s>", ":write<CR>", { desc = "Write file" })
 
 -- lsp, code actions
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions", silent = true })
+vim.keymap.set({ "n" }, "<leader>cc",
+    function()
+        require("neogen").generate()
+    end, { desc = "Document", silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>cr", vim.lsp.buf.rename, { desc = "Rename", silent = true })
 -- vim.keymap.set({ "n", "v" }, "<leader>cf", vim.lsp.buf.format, { desc = "Format code", silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>cf",
