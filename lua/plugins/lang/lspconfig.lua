@@ -10,7 +10,8 @@ vim.lsp.enable({
     "lemminx",
     "nginx_language_server",
     "vtsls",
-    "harper"
+    "harper",
+    "taplo"
 })
 
 vim.lsp.config("pyright", {
