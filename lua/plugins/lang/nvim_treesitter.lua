@@ -15,6 +15,7 @@ require("nvim-treesitter").install({
     "css",
     "javascript",
     "typescript",
+    "json5",
     -- other
     "markdown",
     "nginx",

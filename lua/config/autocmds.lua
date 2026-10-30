@@ -32,6 +32,7 @@ vim.api.nvim_create_autocmd('FileType', {
         "css",
         "javascript",
         "typescript",
+        "json5",
         -- other
         "markdown",
         "nginx",
