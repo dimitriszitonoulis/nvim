@@ -35,6 +35,7 @@ vim.api.nvim_create_autocmd('FileType', {
         "json5",
         -- other
         "markdown",
+        "markdown_inline",
         "nginx",
     },
     callback = function()

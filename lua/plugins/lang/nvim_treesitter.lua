@@ -18,6 +18,7 @@ require("nvim-treesitter").install({
     "json5",
     -- other
     "markdown",
+    "markdown_inline",
     "nginx",
 })
 
