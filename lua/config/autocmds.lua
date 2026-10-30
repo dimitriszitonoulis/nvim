@@ -36,6 +36,7 @@ vim.api.nvim_create_autocmd('FileType', {
         -- other
         "markdown",
         "markdown_inline",
+        "latex",
         "nginx",
     },
     callback = function()
