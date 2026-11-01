@@ -74,15 +74,19 @@ vim.api.nvim_create_autocmd({ "BufEnter", "BufWritePost", "InsertLeave" }, {
     end,
 })
 
--- wrap and check for spell in text filetypes
+-- check for spell in text filetypes
+-- Also change conceallevel for documentation windows
 vim.api.nvim_create_autocmd("FileType", {
     -- group = augroup("wrap_spell"),
     pattern = { "text", "plaintex", "typst", "gitcommit", "markdown" },
     callback = function()
-        -- This is for when hoevering over a function.
-        -- Othewise the spellcheck is activated for the markdown
-        -- in the documentation
+        -- Do not activate spellcheck when in documentatio window
         if vim.bo.buftype ~= "" then
+            --prevenents weird symbols in markdown
+            vim.opt_local.conceallevel = 2
+            -- does not show markdown source when the cursor
+            -- is in the documentation window in normal mode
+            vim.opt_local.concealcursor = "n"
             return
         end
 
