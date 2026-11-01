@@ -7,6 +7,7 @@ require("nvim-treesitter").install({
     "lua",
     "c",
     "cpp",
+    "make",
     "java",
     "bash",
     -- web dev

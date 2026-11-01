@@ -24,6 +24,7 @@ vim.api.nvim_create_autocmd('FileType', {
         "lua",
         "c",
         "cpp",
+        "make",
         "java",
         "bash",
         -- web dev
