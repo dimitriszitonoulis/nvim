@@ -46,6 +46,10 @@ vim.pack.add({
 
     -- documentation support
     { src = "https://github.com/danymat/neogen.git" },
+
+    -- ai integration
+    { src = "https://github.com/folke/sidekick.nvim.git" },
+
 })
 
 

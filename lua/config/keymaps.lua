@@ -48,6 +48,73 @@ vim.keymap.set("n", "<leader>fm", ":Telescope keymaps<CR>", { desc = "manpages" 
 vim.keymap.set("n", "<leader>o", ":update<CR> :source<CR>", { desc = "Save and source file" })
 vim.keymap.set("n", "<C-s>", ":write<CR>", { desc = "Write file" })
 
+-- ai integration
+vim.keymap.set(
+    { "n", "v" }, "<leader>aa",
+    function() require("sidekick.cli").toggle() end,
+    { desc = "Sidekick Toggle CLI", silent = true })
+
+vim.keymap.set(
+    { "n" }, "<leader>a<Tab>",
+    -- ":Sidekick nes jump<CR>",
+    function() require("sidekick").nes_jump_or_apply() end,
+    { desc = "Apply Next Edit Suggestion", silent = true })
+-- vim.keymap.set({ "n", "v" }, "<leader>a<Tab>", ":Sidekick nes jump", { desc = "Apply Next Edit Suggestion", silent = true })
+
+vim.keymap.set(
+    { "n", "v" },
+    "<leader>as",
+    -- ":Sidekick cli toggle<CR>",
+    function() require("sidekick.cli").select() end,
+    { desc = "Select CLI", silent = true })
+
+vim.keymap.set(
+    { "n" },
+    "<leader>ad",
+    function() require("sidekick.cli").close() end,
+    { desc = "Detach a CLI Session", silent = true })
+
+vim.keymap.set(
+    { "n", "x" },
+    "<leader>at",
+    function() require("sidekick.cli").send({ msg = "{this}" }) end,
+    { desc = "Send this", silent = true }
+)
+
+vim.keymap.set(
+    { "n" },
+    "<leader>af",
+    function() require("sidekick.cli").send({ msg = "{file}" }) end,
+    { desc = "Send File", silent = true })
+
+vim.keymap.set(
+    { "x" },
+    "<leader>av",
+    function() require("sidekick.cli").send({ msg = "{selection}" }) end,
+    { desc = "Send Visual Selection", silent = true }
+)
+
+vim.keymap.set(
+    { "n", "t" },
+    "<leader>ap",
+    function() require("sidekick.cli").prompt() end,
+    { desc = "Sidekick Select Prompt", silent = true }
+)
+
+vim.keymap.set(
+    { "n" },
+    "<leader>ac",
+    function() require("sidekick.cli").toggle({ name = "claude", focus = true }) end,
+    { desc = "Sidekick Toggle Claude", silent = true }
+)
+
+-- {
+--     "<c-.>",
+--     function() require("sidekick.cli").focus() end,
+--     desc = "Sidekick Focus",
+--     mode = { "n", "t", "i", "x" },
+-- },
+
 -- lsp, code actions
 vim.keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, { desc = "Code actions", silent = true })
 vim.keymap.set({ "n" }, "<leader>cc",
