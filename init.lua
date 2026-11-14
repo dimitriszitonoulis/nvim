@@ -57,6 +57,10 @@ vim.pack.add({
 -- })
 
 
+-- vim.pack.del({
+--     "mini.snippets"
+-- })
+
 -- require("noice")
 
 require("config.options")
