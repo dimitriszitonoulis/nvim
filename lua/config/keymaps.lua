@@ -1,5 +1,3 @@
-local conform = require("conform")
-
 -- Add any additional keymaps here
 vim.g.mapleader = " "
 -- vim.g.maplocalleader = " "
@@ -60,7 +58,7 @@ vim.keymap.set({ "n", "v" }, "<leader>cr", vim.lsp.buf.rename, { desc = "Rename"
 -- vim.keymap.set({ "n", "v" }, "<leader>cf", vim.lsp.buf.format, { desc = "Format code", silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>cf",
     function()
-        conform.format()
+        require("conform").format()
     end, { desc = "Format code", silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>cd", vim.lsp.buf.definition, { desc = "Go to definition", silent = true })
 vim.keymap.set({ "n", "v" }, "<leader>cR", vim.lsp.buf.references, { desc = "References", silent = true })
